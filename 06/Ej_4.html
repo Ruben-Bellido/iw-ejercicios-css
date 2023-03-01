@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de 3 columnas</title>
+    <style>
+        body {
+            background-color: #F2F3F0;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contenedor-principal {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            margin: 10px;
+        }
+
+        main {
+            width: 100vw;
+            height: 750px;
+            display: flex;
+            flex-direction: row;   
+        }
+
+        nav {
+            order: 0;
+            flex-grow: 2;
+            padding: 5px;
+        }
+
+        article {
+            order: 1;
+            flex-grow: 4;
+        }
+
+        aside {
+            order: 2;
+            flex-grow: 2;
+            padding: 5px;
+        }
+
+        footer {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <header>
+            <h1>Bienvenido al Header</h1>
+        </header>
+        <main>
+            <article style="background-color: #aaa;">
+                <h1>Titulo del post</h1>
+                <p>Lorem ipsum...</p>
+            </article>
+            <nav style="background-color:#bbb;">Navegación</nav>
+            <aside style="background-color: #ccc;">Columna</aside>
+        </main>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>

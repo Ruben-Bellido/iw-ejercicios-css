@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú horizontal</title>
+    <style>
+        header {
+            border-bottom: 1px solid black;
+            font-weight: 300;
+            font-size: 0.9em;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        ul {
+            color: #8b8b8b;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        li {
+            padding: 0 1em;
+            display: flex;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        span {
+            background-color: #8b8b8b;
+            color: #fff;
+            display: inline-block;
+            height: 42px;
+            width: 42px;
+            line-height: 42px;
+            text-align: center; 
+        }
+        span:last-child {
+                margin-left: 0.4em;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/ABB_logo.svg/2560px-ABB_logo.svg.png" /></a>
+        <nav>
+            <ul>
+                <li>INICIO</li>
+                <li>ABOUT</li>
+                <li>SERVICIOS </li>
+                <li>CONTACTO</li>
+            </ul>
+        </nav>
+        <div class="idioma">
+            <span>EN</span>
+            <span>EUS</span>
+        </div>
+    </header>
+</body>
+
+</html>
